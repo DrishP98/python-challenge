@@ -24,26 +24,25 @@ The winner of the election based on popular vote
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
 ## Challenege results
-PyBank Result:
+PyBank:
 Financial Analysis
-----------------------------
 total months: 86
 Total: $22564198
 Average Change: -8311.11
 Greatest Increase in Profits: Aug-16 ($1862002)
 Greatest Decrease in Profits: Feb-14 ($-1825558)
 
-PyPoll
+PyPoll:
 Election Results
-----------------------------
 Total Votes: 369,711
-----------------------------
+
+Candidates with their count and percentage of votes
 Charles Casper Stockham: 23.0% (85,213)
 Diana DeGette: 73.8% (272,892)
 Raymon Anthony Doane: 3.1% (11,606)
--------------------------
+
 Winner: Diana DeGette
--------------------------
+
 ## Install and use
  Data source: UWA analystics bootcamp
  Software: Data given as CSV file, run in Python 3 and using Visual Studio Code 1.84.2
