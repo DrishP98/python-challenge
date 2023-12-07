@@ -24,7 +24,7 @@ The winner of the election based on popular vote
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
 ## Challenege results
-PyBank:
+#### PyBank:
 Financial Analysis
 total months: 86
 Total: $22564198
@@ -32,7 +32,7 @@ Average Change: -8311.11
 Greatest Increase in Profits: Aug-16 ($1862002)
 Greatest Decrease in Profits: Feb-14 ($-1825558)
 
-PyPoll:
+#### PyPoll:
 Election Results
 Total Votes: 369,711
 
