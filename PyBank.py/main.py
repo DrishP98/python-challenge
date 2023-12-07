@@ -1,10 +1,12 @@
+#import and read csv file
+
 import os
 import csv
 
 #set file path
 budget_data_csv = 'budget_data.csv'
 
-#create lists
+#declare the lists/variables
 total_months = []
 total_revenue = []
 month_revenue_change = []
@@ -17,6 +19,7 @@ with open(budget_data_csv) as csvfile:
 
     print(csvreader)
 
+#reading the first row
     header = next(csvreader)
 
     #iterate through teh rows
@@ -52,7 +55,7 @@ print(f"Greatest Decrease in Profits: {total_months[max_decrease_month]} (${(str
 # Output files to text
 output_file = "Financial_Analysis_Summary.txt"
 
-with open(output_file,"w") as file:
+with open(output_file,"w") as txt_file:
     
 # Write methods to print to Financial_Analysis_Summary 
     file.write("Financial Analysis")
