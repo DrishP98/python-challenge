@@ -64,33 +64,33 @@ print(f"Election Results")
 print(f"-------------------------")
 print(f"Total Votes: {total_votes:,}")
 print(f"-------------------------")
-print(f"{candidate_results}")
+
+#Print each candidate's result on a separate line
+for result in candidate_results:
+    print(result)
+
 print(f"-------------------------")
 print(f"Winner: {winner}")
 print(f"-------------------------")
     
-    # Output files to text
+# Output files to text
 
 file_to_output = "election_results_summary.txt"
 
 with open(file_to_output, 'w') as file:
-    file.write("Election Results")
-    file.write("\n")
-    file.write("----------------------------")
-    file.write("\n")
-    file.write(f"Total Votes: {total_votes:,}")
-    file.write("\n")
-    file.write("----------------------------")
-    file.write("\n")
-    file.write(f"{candidate_results}")
-    file.write("\n")
-    file.write(f"-------------------------")
-    file.write("\n")
-    file.write(f"Winner: {winner}")
-    file.write("\n")
-    file.write(f"-------------------------")
-    file.close()
+    file.write("Election Results\n")
+    file.write("----------------------------\n")
+    file.write(f"Total Votes: {total_votes:,}\n")
+    file.write("----------------------------\n")
 
+# Write each candidate's result on a separate line
+    for result in candidate_results:
+        file.write(f"{result}\n")
+
+    file.write("-------------------------\n")
+    file.write(f"Winner: {winner}\n")
+    file.write("-------------------------\n")
+    file.close()
 
 
 
