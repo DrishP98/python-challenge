@@ -1,8 +1,0 @@
-Election Results
-----------------------------
-Total Votes: 369,711
-----------------------------
-candidate_results
--------------------------
-Winner: Diana DeGette
--------------------------

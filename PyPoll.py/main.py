@@ -14,6 +14,7 @@ candidate_votes = {}
 winner_count = 0
 winning_percentage = 0
 winner = ""
+candidate_results = []  
 
 #open the csv file
 
@@ -49,7 +50,8 @@ with open(election_data_csv) as csvfile:
     for candidate in candidate_votes:
         votes = candidate_votes[candidate]
         vote_percentage = float(votes) / float(total_votes) * 100
-        candidate_results = (f"{candidate}: {vote_percentage:.1f}% ({votes:,})\n")
+        result = (f"{candidate}: {vote_percentage:.1f}% ({votes:,})")
+        candidate_results.append(result)
 
     #Calculate winning vote count, percentage, and candidate.
         if (votes > winner_count) and (vote_percentage > winning_percentage):
@@ -62,7 +64,7 @@ print(f"Election Results")
 print(f"-------------------------")
 print(f"Total Votes: {total_votes:,}")
 print(f"-------------------------")
-print(f"candidate_results")
+print(f"{candidate_results}")
 print(f"-------------------------")
 print(f"Winner: {winner}")
 print(f"-------------------------")
@@ -80,7 +82,7 @@ with open(file_to_output, 'w') as file:
     file.write("\n")
     file.write("----------------------------")
     file.write("\n")
-    file.write(f"candidate_results")
+    file.write(f"{candidate_results}")
     file.write("\n")
     file.write(f"-------------------------")
     file.write("\n")
